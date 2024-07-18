@@ -66,7 +66,7 @@ export default function OrderForm() {
       }
       setErrors({
         ...errors,
-        ekMalzeme: 4 < newValue.length || newValue.length > 10,
+        ekMalzeme: 4 > newValue.length || newValue.length > 10,
       });
     } else {
       newValue = value;
